@@ -1,2 +1,2 @@
 # react-native-recipe-app
-My ~~first~~ Second React Native App.
+My ~~first~~ second React Native App.
