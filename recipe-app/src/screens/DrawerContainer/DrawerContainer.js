@@ -11,18 +11,18 @@ export default class DrawerContainer extends React.Component {
       <View style={styles.content}>
         <View style={styles.container}>
           <MenuButton
-            title="HOME"
-            source={require('../../../assets/icons/home.png')}
-            onPress={() => {
-              navigation.navigate('Home');
-              navigation.closeDrawer();
-            }}
-          />
-          <MenuButton
             title="CATEGORIES"
             source={require('../../../assets/icons/category.png')}
             onPress={() => {
               navigation.navigate('Categories');
+              navigation.closeDrawer();
+            }}
+            />
+          <MenuButton
+            title="RECIPES"
+            source={require('../../../assets/icons/home.png')}
+            onPress={() => {
+              navigation.navigate('Recipes');
               navigation.closeDrawer();
             }}
           />

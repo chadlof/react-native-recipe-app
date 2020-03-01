@@ -6,9 +6,9 @@ import MenuImage from '../../components/MenuImage/MenuImage';
 import DrawerActions from 'react-navigation';
 import { getCategoryName } from '../../data/MockDataAPI';
 
-export default class HomeScreen extends React.Component {
+export default class RecipesScreen extends React.Component {
   static navigationOptions = ({ navigation }) => ({
-    title: 'Home',
+    title: 'Recipes',
     headerLeft: (
       <MenuImage
         onPress={() => {

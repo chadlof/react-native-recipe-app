@@ -1,5 +1,5 @@
 import { createDrawerNavigator, createStackNavigator, createAppContainer } from 'react-navigation';
-import HomeScreen from '../screens/Home/HomeScreen';
+import RecipesScreen from '../screens/Recipes/RecipesScreen';
 import CategoriesScreen from '../screens/Categories/CategoriesScreen';
 import RecipeScreen from '../screens/Recipe/RecipeScreen';
 import RecipesListScreen from '../screens/RecipesList/RecipesListScreen';
@@ -10,8 +10,8 @@ import IngredientsDetailsScreen from '../screens/IngredientsDetails/IngredientsD
 
 const MainNavigator = createStackNavigator(
   {
-    Home: HomeScreen,
     Categories: CategoriesScreen,
+    Recipes: RecipesScreen,
     Recipe: RecipeScreen,
     RecipesList: RecipesListScreen,
     Ingredient: IngredientScreen,
@@ -19,7 +19,7 @@ const MainNavigator = createStackNavigator(
     IngredientsDetails: IngredientsDetailsScreen
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Categories',
     // headerMode: 'float',
     defaulfNavigationOptions: ({ navigation }) => ({
       headerTitleStyle: {
